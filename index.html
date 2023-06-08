@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Sign in page</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>SIGN IN</h1>
+        </header>
+        <form >
+            <div class="name">
+                <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your Name" required>
+            </div>
+
+            <div class="email">
+                <label for="email">E-mail</label>
+            <input type="email" id="email" placeholder="Your Email" required>
+            </div>
+            
+            <div class="pass">
+                <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Password">
+            </div>
+
+            <div class="conf-pass">
+                <label for="conf-password">Confirm Password</label>
+            <input type="password" id="conf-password" placeholder="confirm Password">
+            </div>
+            
+            <div class="message">
+                <p id="message"></p>
+            </div>
+            
+            <div class="button">
+                <input type="button" id="button" onclick="checkPassword()" value="Submit">
+            </div>
+            
+
+        </form>
+    </div>
+    
+    <script src="/script.js"></script>
+</body>
+</html>
